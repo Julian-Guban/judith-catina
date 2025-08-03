@@ -553,13 +553,6 @@ li.none-bullet {
     width: fit-content;
     position: relative;
   }
-
-  .intro{
-    width: 250px !important;
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
 }
 
 @media (max-width: 666px) {
@@ -625,6 +618,13 @@ li.none-bullet {
 
   #Documentation>.flex-row {
     flex-direction: column !important;
+  }
+  #Home{
+    overflow-x: auto;
+  }
+
+  .intro{
+    min-width: 250px;
   }
 }
 
@@ -698,6 +698,13 @@ li.none-bullet {
     text-wrap: nowrap;
     text-overflow: ellipsis;
   }
+  
+  .intro{
+    width: 100% !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
 
 @media (max-width: 376px) {
@@ -731,6 +738,10 @@ li.none-bullet {
   .ppt-header {
     flex-direction: column !important;
     align-items: center !important;
+  }
+
+  .intro > h2{
+    font-size: larger;
   }
 }
 
