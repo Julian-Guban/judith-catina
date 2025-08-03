@@ -14,8 +14,8 @@ function App() {
       <main className="w-inherit h-100 x-hide">
         <Home/>
         <DLP />
-        <Reflection />
         <Exam />
+        <Reflection />
         <Documentation />
         <Footer />
       </main>

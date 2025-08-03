@@ -450,6 +450,8 @@ li.none-bullet {
     display: flex !important;
     flex-direction: row !important;
     justify-content: right !important;
+    position: relative;
+    z-index: 1;
   }
 
   .menu-toggle {
@@ -477,12 +479,17 @@ li.none-bullet {
     padding-block: 10px;
   }
 
+  .navbar> li{
+    list-style: none;
+  }
+
   .active {
     border: none;
+    z-index: 100;
   }
 
   a.btn>span {
-    color: gray;
+    color: whitesmoke;
   }
 
   a.btn {
@@ -491,6 +498,14 @@ li.none-bullet {
 
   a.btn.active>span {
     color: white;
+  }
+
+  a.btn.active>img {
+    display: flex;
+    filter: invert(3);
+    /* Apply filter effect */
+    transition: opacity 0.3s ease, visibility 0s 0s;
+    /* Smooth transition for opacity and visibility */
   }
 
   .carousel-container {
@@ -531,6 +546,19 @@ li.none-bullet {
 
   main>h1 {
     font-size: large;
+  }
+}
+@media (max-width: 666px) {
+  #Home{
+    width: fit-content;
+    position: relative;
+  }
+
+  .intro{
+    width: 250px !important;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
 
