@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Navbar from "./pages/Navbar";
+import DLP from "./pages/DLP";
+import Reflection from "./pages/Reflection";
+import Exam from "./pages/Exam";
+import Documentation from "./pages/Documentation";
+import Footer from "./pages/Footer";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App flex-row">
+      <Navbar />
+      <main className="w-inherit h-100 x-hide">
+        <Home/>
+        <DLP />
+        <Reflection />
+        <Exam />
+        <Documentation />
+        <Footer />
+      </main>
     </div>
   );
 }
